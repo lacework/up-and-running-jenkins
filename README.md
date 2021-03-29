@@ -92,7 +92,7 @@ After that you can just click **"Restart"** to finish the initial setup. _(Note:
 Once Jenkins restarts you can login with `admin/<admin password>`
 
 ### Install Docker Pipeline Plugin
-![Gif showing installing docker pipeline plugin in Jenkins](https://www.lacework.com/wp-content/uploads/2021/03/install_docker_pipeline_plugin.gif)
+![Gif showing installing docker pipeline plugin in Jenkins](images/install_docker_pipeline_plugin.gif)
 You will need to install **Docker Pipeline** plugin. This plugin allows you to build, test, and use Docker images from Jenkins Pipeline project. Go to the [Manage Jenkins Plugins](http://localhost:8080/pluginManager/) page, search for Docker Pipeline plugin under the **Available**, click the checkbox adjancent to Docker pipeline plugin, and finally click on the **Download now and install after restart** button.
 
 ## Configuring Jenkins
