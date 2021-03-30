@@ -31,25 +31,29 @@ $ cd jenkins-lacework-tutorial
 ```
 
 ## Lacework API Token
-In order to authenticate with Lacework and request on demand container vulnerability scans we will need to have an API key and secret. 
+![](https://techally-artifacts.s3-us-west-2.amazonaws.com/support-doc-imgs/generate-api-key.gif)
+To authenticate with Lacework and request on demand container vulnerability scans we will need to have an API key and secret. 
 
-1. Login to your Lacework Account
-2. Click on Settings and choose API Keys
-3. Click *"Create New"*
-4. Give your API token a _Name_ and optionally a _Description_
-5. Click the *Download* link on the right next to the *ENABELED* switch and save the file locally as we will need it to configure Jenkins
+1. Log in to your Lacework Account.
+2. Click on **Settings -> API Keys**.
+3. Click **Create New**.
+4. Give your API token a **Name** and optionally a **Description**.
+5. Click the **Download** link on the right and save the file locally.
 
-The contents of your API key contain a “keyId” and “secret” and will look something like this...
+The contents of your API key contain a `keyId`, `secret`, `subAccount`, and `account`:
 
 ```json
 {
-  "keyId": "ACCOUNT_86858622520DB3B8E6C171247820FA724CDDB19DDDDDDD",
-  "secret": "_412a4c080e5c8a2e069a4144444444444"
+  "keyId": "ACCOUNT_ABCEF01234559B9B07114E834D8570F567C824039756E03",
+  "secret": "_abc1234e243a645bcf173ef55b837c19",
+  "subAccount": "my-sub-account",
+  "account": "my-account.lacework.net"
 }
 ```
+
 ## Jenkins with docker-compose
 
-The root of the jenkins-lacework-tutorial contains a docker-compose.yml file that we can use to bring up a test environment comprised of a docker network, two docker volumes, Jenkins running in a docker container, and a Docker in Docker (dind) container to run our build jobs.
+The root of this repository contains a `docker-compose.yml` file that we can use to bring up a test environment comprised of a docker network, two docker volumes, Jenkins running in a docker container, and a Docker in Docker (dind) container to run our build jobs.
 
 ### docker-compose up
 Make sure you are in the root directory of the project we cloned above and execute the following command:
