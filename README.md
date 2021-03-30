@@ -25,9 +25,9 @@ Fork and Clone the Repository
 The first thing you will want to do is to fork this repo to your own Github account, and then clone it to your workstation with Git and Docker Desktop installed.
 
 ```bash
-$ git clone https://github.com/<YOUR USERNAME>/jenkins-lacework-tutorial.git
+$ git clone https://github.com/<YOUR USERNAME>/up-and-running-jenkins.git
 
-$ cd jenkins-lacework-tutorial
+$ cd up-and-running-jenkins
 ```
 
 ## Lacework API Token
@@ -125,7 +125,7 @@ You will need to add your username and password for Docker Hub, as well as anoth
 #### Docker Hub Credentials
 ![Docker Hub Credentials](images/docker_hub_credentials.png)
 
-Add your Docker Hub Credentials as follows and use the ID `‘docker_hub’` as that is how it is referred to in the [`Jenkinsfile`](https://github.com/scottford-lw/jenkins-lacework-tutorial/blob/master/Jenkinsfile#L23)
+Add your Docker Hub Credentials as follows and use the ID `‘docker_hub’` as that is how it is referred to in the [`Jenkinsfile`](https://github.com/lacework/up-and-running-jenkins/blob/master/Jenkinsfile#L23)
 
 Click **"OK"**
 
@@ -177,7 +177,7 @@ You can now copy the token to your clipboard and paste it back in Jenkins
 
 Once authenticated you should be able to navigate any of the Github Orgs you have access to so you can select the location where you forked the example Git repo at the beginning of the tutorial. 
 
-Select the `jenkins-lacework-tutorial` and then click **"Create Pipeline"**
+Select the `up-and-running-jenkins` and then click **"Create Pipeline"**
 
 At this point Jenkins will find the `Jenkinsfile` in the root of the repository and kick off the pipeline. 
 
