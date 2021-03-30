@@ -32,6 +32,7 @@ $ cd jenkins-lacework-tutorial
 
 ## Lacework API Token
 ![](https://techally-artifacts.s3-us-west-2.amazonaws.com/support-doc-imgs/generate-api-key.gif)
+
 To authenticate with Lacework and request on demand container vulnerability scans we will need to have an API key and secret. 
 
 1. Log in to your Lacework Account.
