@@ -31,7 +31,7 @@ $ cd up-and-running-jenkins
 ```
 
 ## Lacework API Token
-![](https://techally-artifacts.s3-us-west-2.amazonaws.com/support-doc-imgs/generate-api-key.gif)
+![](images/generate-api-key.gif)
 
 To authenticate with Lacework and request on demand container vulnerability scans we will need to have an API key and secret. 
 
