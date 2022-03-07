@@ -7,7 +7,7 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build("$DOCKER_HUB/lacework-cli") + ":amd64"
+                    app = docker.build("$DOCKER_HUB/lacework-cli")
                     app.inside {
                         sh 'lacework --help'
                     }
