@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label 'amd64'
+    }
     stages {
         stage('Build Docker Image') {
             when {
@@ -7,7 +9,7 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build("$DOCKER_HUB/lacework-cli")
+                    app = docker.build("$DOCKER_HUB/lacework-cli") + ":amd64"
                     app.inside {
                         sh 'lacework --help'
                     }
