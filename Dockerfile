@@ -1,4 +1,4 @@
-FROM  centos:8
+FROM centos:latest
 LABEL maintainer="tech-ally@lacework.net" \
       description="The Lacework CLI helps you manage the Lacework cloud security platform"
 
